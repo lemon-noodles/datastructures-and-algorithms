@@ -44,9 +44,9 @@ teamB = [3, 5];
 // 2
 // 4
 
-teamA = [2, 10, 5, 4, 8];
-// 2,4,5,8,10
-teamB = [3, 1, 7, 8];
+// teamA = [2, 10, 5, 4, 8];
+// // 2,4,5,8,10
+// teamB = [3, 1, 7, 8];
 
 // 1
 // 0
@@ -59,15 +59,14 @@ const binary_search = (arr, item) => {
 
   while (left <= right) {
     let pivot = left + Math.floor((right - left) / 2);
-    console.log(item, left, right);
-    if (item < arr[pivot]) {
-      return pivot;
+    if (arr[pivot] > item) {
+      right = pivot - 1;
     } else {
       left++;
     }
   }
 
-  return arr.length;
+  return left;
 };
 
 const solution = (ta, tb) => {
