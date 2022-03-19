@@ -12,12 +12,19 @@
 
 */
 
-var middleNode = function (head) {
-  let left = 0;
-  let right = head.length - 1;
+function ListNode(val, next) {
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
+}
 
-  let mid = left + Math.ceil((right - left) / 2);
-  return mid;
+var middleNode = function (head) {
+  slow = fast = head;
+  while (fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
 };
 
 console.log(middleNode([1, 2, 3, 4, 5]));
