@@ -19,6 +19,7 @@
     The above figure represents the given linked list.
     For n = 4, node 2 with value 3 is the middle node, which is marked in red.
 
+    https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 */
 
 var deleteMiddle = function (head) {
