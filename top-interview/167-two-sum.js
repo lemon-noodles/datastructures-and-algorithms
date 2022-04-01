@@ -39,5 +39,5 @@ console.log(twoSum([-1, 0], -1));
     Time complexity is O(n)
     Space complexity is O(1)
 
-    to solve a 2 sum problem with O(1) space complexity we have tp sort it first
+    to solve a 2 sum problem with O(1) space complexity we have to sort it first
 */
