@@ -1,0 +1,16 @@
+{
+  "name": "datastructures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Learning DS and Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@ln:lemon-noodles/datastructures-and-algorithms.git"
+  },
+  "author": "Lemonn Noodals",
+  "license": "ISC",
+  "type": "module"
+}
